@@ -1,7 +1,13 @@
 function Books(props) {
+    function orderbook(){
+        alert(`${props.title} by ${props.author} added in wishlist`)
+    }
 
     return(
-        <div className="card">
+        
+    
+        <div className="card " onClick={orderbook}>
+            
             <div className="card-header">
                 <img className="book-img"  src={props.img} alt="" />
                

@@ -18,7 +18,7 @@ let booklist = [
     title: "Pride and Prejudice",
     author: "Jane Austen",
     rating: 4.28,
-    img: "https://source.unsplash.com/600x600/?pride-and-prejudice"
+    img: "https://images.squarespace-cdn.com/content/v1/5951afaf9de4bb54f00ad49a/1554695486726-OYU3SQZV74IDGN5EQA7I/Jane+for+website.jpg?format=1000w"
   },
 
   
@@ -33,14 +33,22 @@ let booklist = [
     author: "Gabriel Garcia Marquez",
     rating: 4.07,
     img: "https://images.unsplash.com/photo-1655939802008-67ea6c389b30?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8b25lLWh1bmRyZWQteWVhcnMtb2Ytc29saXR1ZGV8fHx8fHwxNjgyNDMxNzE5&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600"
-  }
-  
+  },
+
+  {
+    title: "Wings of fire",
+    author: "Dr.A.P.J.Abdul kalam",
+    rating: 4.9,
+    img: "https://cdnb.artstation.com/p/assets/images/images/020/366/189/large/jeeva-artist-09isro.jpg?1567513033"
+  },
+ 
 ]
 
 function App() {
   return (
+   
     <div className='card-Book'>
-
+  
       {
         booklist.map((book)=>{
           return <Books title={book.title} author={book.author} img={book.img} rating={book.rating}/>
